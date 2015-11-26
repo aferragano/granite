@@ -1,6 +1,8 @@
 .articles-repeat {
 	list-style-type: none;
 
+	background-color: $green;
+
 	.card {
 		@include span-columns(4);
 		font-family: $font3;
