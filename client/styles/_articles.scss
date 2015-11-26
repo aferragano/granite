@@ -1,0 +1,28 @@
+.articles-repeat {
+	list-style-type: none;
+
+	.card {
+		@include span-columns(4);
+		font-family: $font3;
+		color: $yellow;
+		border-radius: 1em;
+		border: 5px solid $beige;
+		background-color: $gray;
+		padding: 10px;
+
+		a, a:visited {
+			font-size: 1.5em;
+			@include span-columns(4 of 4);
+			color: $green;
+			text-align: center;
+			text-decoration: none;
+
+		}
+
+		.tag{
+			font-family: $font5;
+
+		}
+	}
+
+}

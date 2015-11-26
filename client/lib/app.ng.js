@@ -1,0 +1,1 @@
+angular.module('granite',['angular-meteor', 'ui.router']);

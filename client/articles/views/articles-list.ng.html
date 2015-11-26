@@ -1,0 +1,20 @@
+<form>
+  <label>title</label>
+  <input ng-model="newArticle.title">
+  <label>tag</label>
+  <input ng-model="newArticle.tag">
+  <label>content</label>
+  <input ng-model="newArticle.content">
+  <button ng-click="articles.push(newArticle)">Add</button>
+  <button ng-click="removeAll()">Remove All</button>
+</form>
+<ul class="articles-repeat">
+  <li ng-repeat="article in articles" class="card">
+    <a href="/articles/{{article._id}}">{{article.title}}</a>
+    <p class="tag">{{article.tag}}</p>
+    <p>{{article.content}}</p>
+    <div class="test">lala</div>
+
+    <button ng-click="remove(article)">X</button>
+  </li>
+</ul>
