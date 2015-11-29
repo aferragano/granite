@@ -1,8 +1,12 @@
+body {
+	background-color: $beige;
+}
 .article{
-
-	@include span-columns(10);
-	@include shift(1);
+	margin-top:1em;
+	@include span-columns(8);
+	@include shift(2);
 	background-color: $gray;
+
 	
 	.banner{
 
@@ -12,28 +16,40 @@
 		margin-left:auto;
 		text-align: center;
 		float:center;
-		@include span-columns(8 of 12);
-		@include shift(2);
+		@include span-columns(12 of 12);
+
 		background-position: center;
 
-		h2 {
+	}
+	h2 {
+		text-align: center;
+		@include span-columns(12 of 12);
+		font-size: 3em;
+		font-family: $font4;
+		color: $gray;
+		margin: 0em 0 0 0;
+		z-index:100;
+		background-color:$beige;
+	}
+	.date{
 
-			font-size: 3em;
-			font-family: $font4;
-			color: $gray;
-			margin: 1em 2em 3em 2em;
-			text-shadow: 2px 2px $purpletwo;
-		}
+		margin:0;
+		text-align:right;
+		font-family: $font1;
+		color: $blue;
+		@include span-columns(11 of 12);
+
 	}
 
 	
 	.tag {
 
+		margin:0;
 		text-align:right;
 		font-family: $font3;
 		font-size: 1em;
 		color: $purple;
-		@include span-columns(12);
+		@include span-columns(11 of 12);
 
 
 	}
@@ -43,7 +59,7 @@
 		font-family: $font5;
 		font-size: 1em;
 		color: $purple;
-		@include span-columns(12);
+		@include span-columns(11 of 12);
 
 	}
 	img{
@@ -51,4 +67,9 @@
 		width: 10em;
 
 	}
+}
+
+#edit-form{
+	display:none;
+
 }

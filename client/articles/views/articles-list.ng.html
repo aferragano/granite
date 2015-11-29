@@ -5,6 +5,7 @@
   <input placeholder="tags" ng-model="newArticle.tag">
   <textarea placeholder="article content" ng-model="newArticle.content"></textarea>
   <input placeholder="image url" ng-model="newArticle.imageUrl">
+  <input type="date" ng-model="newArticle.date">
   <br>
   <button ng-click="articles.push(newArticle)">Add</button>
   <button ng-click="removeAll()">Remove All</button>
@@ -14,9 +15,9 @@
 
   <li ng-repeat="article in articles" class="card">
     <div class="left-card">
-      <a href="/articles/{{article._id}}">{{article.title}}</a>
+      <a href="/articles/{{article._id}}">{{article.title | limitTo: 40 }}</a>
       <p class="tag">{{article.tag}}</p>
-      <p class="content">{{article.content | limitTo: 105}} ...</p>
+      <p class="content">{{article.content | limitTo: 100}} ...</p>
       <button class="btn-delete" ng-click="remove(article)">X</button>
     </div>
     <div class="card-image">

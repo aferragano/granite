@@ -1,22 +1,22 @@
-
-<input ng-model="article.title">
-<input ng-model="article.content">
-<input ng-model="article.tag">
+<form id="edit-form" >
+	<input ng-model="article.title">
+	<input type="date" ng-model="article.date">
+	<input ng-model="article.tag">
+	<input ng-model="article.content">
+	<input type=submit >
+</form>
 
 <div class="article" >
 	
-
+	<h2 class="title" > {{ article.title}}</h2>
 	<div class="banner" ng-style="{'background-image':'url({{article.imageUrl}} )'}">
-
-		<h2 class="title" > {{ article.title}}</h2>
 	</div>
-	 
 
+	<p class="date" > {{article.date | date:'longDate'}} </p>
 	<p class="tag" > {{ article.tag}}</p> 
 
 	<p class="content" > {{ article.content}}</p> 
 
-	<p class="date" > {{article.date}} </p>
 
 	
 
