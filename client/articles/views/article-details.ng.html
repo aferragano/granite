@@ -1,5 +1,23 @@
-Here you will see and change the details of the article:
 
 <input ng-model="article.title">
 <input ng-model="article.content">
 <input ng-model="article.tag">
+
+<div class="article" >
+	
+
+	<div class="banner" ng-style="{'background-image':'url({{article.imageUrl}} )'}">
+
+		<h2 class="title" > {{ article.title}}</h2>
+	</div>
+	 
+
+	<p class="tag" > {{ article.tag}}</p> 
+
+	<p class="content" > {{ article.content}}</p> 
+
+	<p class="date" > {{article.date}} </p>
+
+	
+
+</div>

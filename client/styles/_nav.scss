@@ -1,6 +1,9 @@
+
 .top-nav {
+
 	top: 0;
 	background-color: $gray;
+	//background-image: url("http://www.fletchergranite.com/Images/GranitePhotos8x8/KITLEDGE_GREY_THERMALED_8x8.jpg") ;
 	font-family: $font4;
 	padding: 0;
 	margin: 0;
@@ -17,13 +20,13 @@
 	a{
 		margin:0;
 		text-decoration:none;
-		color: $green;
+		color: $blue;
 	}
 	a:visited{
-		color: $green;
+		color: $blue;
 	}
 	a:hover{
-		color: $yellow;
+		color: $bluetwo;
 	}
 
 }

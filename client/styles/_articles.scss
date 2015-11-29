@@ -1,30 +1,76 @@
 .articles-repeat {
-	list-style-type: none;
-
-	background-color: $green;
 
 	.card {
-		@include span-columns(4);
-		font-family: $font3;
-		color: $yellow;
-		border-radius: 1em;
-		border: 5px solid $beige;
-		background-color: $gray;
-		padding: 10px;
+		margin-top:.5em;
+		margin-bottom:.5em;
+		height: 7.8em;
+		border-right: 1px solid $beige;
+		border-bottom: 1px solid $beige;
+		@include span-columns(5.5);
+
+		.right-card {
+			display:inline-block;
+			float: right;
+			
+		}
+		.left-card {
+			width: 22em;
+			height: 10em;
+			display:inline-block;
+
+		}
 
 		a, a:visited {
-			font-size: 1.5em;
-			@include span-columns(4 of 4);
-			color: $green;
-			text-align: center;
+			font-family: $font2;
+			font-size: 1.3em;
 			text-decoration: none;
+			color: $blue;
 
+		}
+		a:hover{
+			color: $purple;
 		}
 
 		.tag{
-			font-family: $font5;
+			width: 100%;
+			text-align: right;
+			color: $purple;
+			font-family: $font4;
+			font-size: .7em;
+			margin-bottom:0;
 
 		}
+		.card-image {
+			display:inline-block;
+			float: right;
+
+
+			img {
+				width: 9em;
+				margin-top:.2em;
+				padding:.1em;
+
+			}
+
+		}
+		.content{
+			font-family: $font5;
+			font-size: .85em;
+			color: $purpletwo;
+			margin-top:.2em;
+			padding:0 .5em 0 .5em ;
+
+		}
+	}
+	.btn-delete {
+		background-color: $bluetwo;
+		margin-bottom:.3em;
+		color: white;
+		border: none;
+		margin: 1px;
+	}
+	.btn-delete:hover{
+		background-color: $blue;
 	}
 
 }

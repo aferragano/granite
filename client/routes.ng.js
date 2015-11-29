@@ -6,10 +6,10 @@ angular.module("granite").config(function ($urlRouterProvider, $stateProvider, $
       templateUrl: 'client/articles/views/articles-list.ng.html',
       controller: 'ArticlesListCtrl'
     })
-    .state('articlesDetails', {
+    .state('articleDetails', {
       url: '/articles/:articleId',
-      templateUrl: 'client/articles/views/articles-details.ng.html',
-      controller: 'ArticlesDetailsCtrl'
+      templateUrl: 'client/articles/views/article-details.ng.html',
+      controller: 'ArticleDetailsCtrl'
     });
 
   $urlRouterProvider.otherwise("/articles");

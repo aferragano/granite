@@ -1,0 +1,54 @@
+.article{
+
+	@include span-columns(10);
+	@include shift(1);
+	background-color: $gray;
+	
+	.banner{
+
+		margin-top:1em;
+		height: 15em;
+		margin-right:auto;
+		margin-left:auto;
+		text-align: center;
+		float:center;
+		@include span-columns(8 of 12);
+		@include shift(2);
+		background-position: center;
+
+		h2 {
+
+			font-size: 3em;
+			font-family: $font4;
+			color: $gray;
+			margin: 1em 2em 3em 2em;
+			text-shadow: 2px 2px $purpletwo;
+		}
+	}
+
+	
+	.tag {
+
+		text-align:right;
+		font-family: $font3;
+		font-size: 1em;
+		color: $purple;
+		@include span-columns(12);
+
+
+	}
+	.content{
+
+		margin-left:2em;
+		font-family: $font5;
+		font-size: 1em;
+		color: $purple;
+		@include span-columns(12);
+
+	}
+	img{
+
+		width: 10em;
+
+	}
+}
